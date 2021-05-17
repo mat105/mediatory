@@ -5,9 +5,9 @@ from django.db import models
 class Tale(models.Model):
     title = models.CharField(max_length=40)
     content = models.TextField()
-    # This field is a binary field (multiple genres allowed ex: DRAMA|HORROR)
+    # TODO: Migrate to another table
     genre = models.PositiveSmallIntegerField()
-    min_age = models.PositiveSmallIntegerField(null=True)
+    min_age = models.PositiveSmallIntegerField(default=0)
 
     publish_date = models.DateTimeField(auto_now_add=True)
     edit_date = models.DateTimeField(auto_now=True)
