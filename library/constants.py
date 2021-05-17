@@ -1,3 +1,5 @@
+# TODO: Temporary, could be changed to a secondary table or used as a binary field
+
 DRAMA = 1
 ROMANCE = 2
 HORROR = 4

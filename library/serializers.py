@@ -8,4 +8,4 @@ class TaleSerializer(ModelSerializer):
 
     class Meta:
         model = Tale
-        fields = '__all__'
+        fields = ['id', 'title', 'content', 'genre', 'owner', 'publish_date']
