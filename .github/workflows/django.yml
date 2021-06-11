@@ -25,6 +25,7 @@ jobs:
       run: |
         pip install flake8
         flake8 --max-line-length=127 --statistics
+        echo "===Running linter==="
     - name: Run Tests
       run: |
         python manage.py test
