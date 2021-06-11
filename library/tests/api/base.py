@@ -2,7 +2,7 @@ import base64
 
 from django.contrib.auth.models import User
 
-from rest_framework.test import APIClient, APITestCase
+from rest_framework.test import APITestCase
 
 
 class BaseTestCase(APITestCase):
