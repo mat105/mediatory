@@ -1,4 +1,4 @@
-# TODO: Temporary, could be changed to a secondary table or used as a binary field
+# TODO: Make a table with these?
 
 DRAMA = 1
 ROMANCE = 2

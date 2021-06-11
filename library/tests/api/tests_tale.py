@@ -49,7 +49,7 @@ class TaleTestCase(BaseTestCase):
             'min_age': 4
         }
 
-        response = self.client.post(f'/tale/', data=tale, format='json')
+        response = self.client.post('/tale/', data=tale, format='json')
 
         tale = Tale.objects.get(title='test_post_tale')
         serializer = TaleSerializer(tale)
@@ -70,5 +70,5 @@ class TaleTestCase(BaseTestCase):
             'min_age': 4
         }
 
-        response = self.client.post(f'/tale/', data=tale, format='json')
+        response = self.client.post('/tale/', data=tale, format='json')
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)
